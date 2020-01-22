@@ -7,26 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC70D2A223705EA100E5A370 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AC70D2A123705EA100E5A370 /* Resnet50.mlmodel */; };
+		AC80BAF023892E76008138DF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BAEF23892E76008138DF /* CustomCell.swift */; };
+		AC80BAF223892FAD008138DF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC80BAF123892FAD008138DF /* CustomCell.xib */; };
+		AC8E875823D7CF61001590C9 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E875723D7CF61001590C9 /* SuccessViewController.swift */; };
+		AC8E875A23D7D981001590C9 /* FailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E875923D7D981001590C9 /* FailedViewController.swift */; };
 		FA9331891EFD58DF00C47A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9331881EFD58DF00C47A0C /* AppDelegate.swift */; };
 		FA93318B1EFD58DF00C47A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93318A1EFD58DF00C47A0C /* ViewController.swift */; };
 		FA93318E1EFD58DF00C47A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93318C1EFD58DF00C47A0C /* Main.storyboard */; };
 		FA9331901EFD58DF00C47A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA93318F1EFD58DF00C47A0C /* Assets.xcassets */; };
 		FA9331931EFD58DF00C47A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9331911EFD58DF00C47A0C /* LaunchScreen.storyboard */; };
-		FA93319C1EFD591E00C47A0C /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA93319A1EFD590E00C47A0C /* Resnet50.mlmodel */; };
-		FA93319D1EFD591E00C47A0C /* SimpleMnist.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA93319B1EFD590E00C47A0C /* SimpleMnist.mlmodel */; };
 		FA93319F1EFD594E00C47A0C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93319E1EFD594500C47A0C /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA9331851EFD58DF00C47A0C /* CoreML-samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-samples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC70D2A123705EA100E5A370 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		AC80BAEF23892E76008138DF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		AC80BAF123892FAD008138DF /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		AC8E875723D7CF61001590C9 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		AC8E875923D7D981001590C9 /* FailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedViewController.swift; sourceTree = "<group>"; };
+		FA9331851EFD58DF00C47A0C /* eshiritori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eshiritori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9331881EFD58DF00C47A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA93318A1EFD58DF00C47A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA93318D1EFD58DF00C47A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA93318F1EFD58DF00C47A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA9331921EFD58DF00C47A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9331941EFD58DF00C47A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA93319A1EFD590E00C47A0C /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		FA93319B1EFD590E00C47A0C /* SimpleMnist.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SimpleMnist.mlmodel; sourceTree = "<group>"; };
 		FA93319E1EFD594500C47A0C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +58,7 @@
 		FA9331861EFD58DF00C47A0C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA9331851EFD58DF00C47A0C /* CoreML-samples.app */,
+				FA9331851EFD58DF00C47A0C /* eshiritori.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +66,13 @@
 		FA9331871EFD58DF00C47A0C /* CoreML-samples */ = {
 			isa = PBXGroup;
 			children = (
-				FA93319A1EFD590E00C47A0C /* Resnet50.mlmodel */,
-				FA93319B1EFD590E00C47A0C /* SimpleMnist.mlmodel */,
+				AC70D2A123705EA100E5A370 /* Resnet50.mlmodel */,
 				FA9331881EFD58DF00C47A0C /* AppDelegate.swift */,
 				FA93318A1EFD58DF00C47A0C /* ViewController.swift */,
+				AC8E875723D7CF61001590C9 /* SuccessViewController.swift */,
+				AC8E875923D7D981001590C9 /* FailedViewController.swift */,
+				AC80BAEF23892E76008138DF /* CustomCell.swift */,
+				AC80BAF123892FAD008138DF /* CustomCell.xib */,
 				FA93319E1EFD594500C47A0C /* UIImage+Extension.swift */,
 				FA93318C1EFD58DF00C47A0C /* Main.storyboard */,
 				FA93318F1EFD58DF00C47A0C /* Assets.xcassets */,
@@ -90,7 +99,7 @@
 			);
 			name = "CoreML-samples";
 			productName = "CoreML-samples";
-			productReference = FA9331851EFD58DF00C47A0C /* CoreML-samples.app */;
+			productReference = FA9331851EFD58DF00C47A0C /* eshiritori.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,6 +142,7 @@
 			files = (
 				FA9331931EFD58DF00C47A0C /* LaunchScreen.storyboard in Resources */,
 				FA9331901EFD58DF00C47A0C /* Assets.xcassets in Resources */,
+				AC80BAF223892FAD008138DF /* CustomCell.xib in Resources */,
 				FA93318E1EFD58DF00C47A0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA93319F1EFD594E00C47A0C /* UIImage+Extension.swift in Sources */,
-				FA93319C1EFD591E00C47A0C /* Resnet50.mlmodel in Sources */,
-				FA93319D1EFD591E00C47A0C /* SimpleMnist.mlmodel in Sources */,
 				FA93318B1EFD58DF00C47A0C /* ViewController.swift in Sources */,
+				AC80BAF023892E76008138DF /* CustomCell.swift in Sources */,
+				AC70D2A223705EA100E5A370 /* Resnet50.mlmodel in Sources */,
+				AC8E875A23D7D981001590C9 /* FailedViewController.swift in Sources */,
+				AC8E875823D7CF61001590C9 /* SuccessViewController.swift in Sources */,
 				FA9331891EFD58DF00C47A0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +294,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
-				DEVELOPMENT_TEAM = 8JNZ54VYUL;
+				DEVELOPMENT_TEAM = HCE7U2C7UE;
 				INFOPLIST_FILE = "CoreML-samples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ytakzk.CoreML-samples";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ytakzk.CoreML-samples2";
+				PRODUCT_NAME = eshiritori;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,11 +309,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COREML_CODEGEN_LANGUAGE = Swift;
-				DEVELOPMENT_TEAM = 8JNZ54VYUL;
+				DEVELOPMENT_TEAM = HCE7U2C7UE;
 				INFOPLIST_FILE = "CoreML-samples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.ytakzk.CoreML-samples";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.ytakzk.CoreML-samples2";
+				PRODUCT_NAME = eshiritori;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,6 +338,7 @@
 				FA9331991EFD58DF00C47A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
