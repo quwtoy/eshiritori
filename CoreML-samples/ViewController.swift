@@ -15,12 +15,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var probsLabel: UILabel!
     @IBOutlet weak var hintLabel: UILabel!
+    
+    
     var number = 0
+    @IBOutlet weak var beforeImageView:UIImageView!
+    @IBOutlet weak var predictImageView:UIImageView!
     var hint: String = "" {
         didSet{
-//            NSLog("now:%@", hint) // set 後の値
-//            NSLog("old:%@", oldValue) // set 前の値
             hintLabel.text = "「" + hint + "」" + "から始まる写真を選んでね"
+        }
+    }
+    var failedFlg: Bool = false {
+        didSet{
+            if(failedFlg){
+                imageView.image = beforeImageView.image
+            }
         }
     }
     
@@ -35,9 +44,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.backgroundColor = UIColor.init(red: 163/255, green: 209/255, blue: 255/255, alpha: 90/100)
         resultLabel.text = ""
         probsLabel.text  = ""
-        hint = "ま"
+        hint = "り"
+        let ganmenImage = UIImage.gif(name: "ganmen")
+        imageView.image = ganmenImage
+        beforeImageView.image = ganmenImage
         hintLabel.textAlignment = NSTextAlignment.center
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,26 +57,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         imagePicker.delegate   = self
         imagePicker.sourceType = .photoLibrary
-
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // Segueを利用し画面遷移および値渡し
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // 失敗メッセージ通知用Segue呼び出し
+       if(segue.identifier == "FailedSegue"){
+           let nextView = segue.destination as! FailedViewController
+           // FailedViewControllerに値渡し
+           nextView.argString = "close"
+           nextView.argImage = predictImageView.image
+       }else if(segue.identifier == "SuccessSegue"){
+           let nextView = segue.destination as! SuccessViewController
+           // SuccessViewControllerに値渡し
+           nextView.argImage = predictImageView.image
+        
+        }
+   }
 
     @IBAction func openPhotoLibrary(_ sender: Any) {
-        
+        // 写真を選択し予測実施
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    // 画像を解析
     @IBAction func predict(_ sender: Any) {
-        guard let image = imageView.image, let ref = image.buffer else {
-                
+        predictImageView.image = imageView.image
+        guard let image = predictImageView.image, let ref = image.buffer else {
                 return
         }
-        
         resnet(ref: ref)
+        
+        let loadingImage = UIImage.gif(name: "loading")
+        imageView.image = loadingImage
     }
     
     @IBOutlet weak var tableView: UITableView! {
@@ -145,7 +174,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 }
 
 private extension ViewController {
-    
+
     func resnet(ref: CVPixelBuffer){
         
         do {
@@ -192,23 +221,31 @@ private extension ViewController {
                 let atamamoji = String(convertedHiragana.prefix(1))
                 let shirimoji = String(convertedHiragana.suffix(1))
                 
+                print(convertedHiragana)
+                
                 // 先頭文字が前回末尾文字と一致している場合
                 if (atamamoji == self.hint) {
+                    // 末尾文字を登録
                     self.hint = shirimoji
                     // TODO しりとりに成功したことをポップアップで通知
                     self.performSegue(withIdentifier: "SuccessSegue", sender: nil)
+                    
+                    //  文字列追加
+                    self.dataSource.append((isMe, convertedText))
+                    self.tableView.reloadDataAfter {
+                        self.tableView.scrollToRow(at: IndexPath(row: self.dataSource.count - 1, section: 0), at: .bottom, animated: true)
+                    }
+                    self.imageView.image = self.predictImageView.image
+                    self.beforeImageView.image = self.predictImageView.image
                 // 一致しない場合
                 } else {
                     // TODO 文字が一致していないことをポップアップで通知
                     self.performSegue(withIdentifier: "FailedSegue", sender: nil)
-                    print("文字が違うよ")
+                    self.failedFlg = true
+                    self.imageView.image = self.beforeImageView.image
                 }
                 
-                //  文字列追加
-                self.dataSource.append((isMe, convertedText))
-                self.tableView.reloadDataAfter {
-                    self.tableView.scrollToRow(at: IndexPath(row: self.dataSource.count - 1, section: 0), at: .bottom, animated: true)
-                }
+                
                 
             }
         } catch {
@@ -264,6 +301,8 @@ final class TextConverter {
         return output
     }
 }
+
+
     
 
 extension UITableView {

@@ -10,12 +10,42 @@ import Foundation
 import UIKit
 
 class FailedViewController: UIViewController {
+    
+    var argString = ""
+    var argImage: UIImage! = nil
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var ngButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // NGボタンタイトルを格納
+        ngButton.setTitle(argString, for: .normal)
         
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        
+        imageView.image = argImage
+        if(argImage != nil){
+            // スクリーンサイズの取得
+            let screenW:CGFloat = view.frame.size.width
+            let screenH:CGFloat = view.frame.size.height
+            // 画像のフレームを設定
+            imageView.frame = CGRect(x:0, y:0, width:128, height:128)
+            // 画像を中央に設定
+            imageView.center = CGPoint(x:screenW/2, y:screenH/2)
+            // 設定した画像をスクリーンに表示する
+            self.view.addSubview(imageView)
+        }
+
     }
-    @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func ngButtonAction(_ sender: Any) {
+        if(argString == "close"){
+            dismiss(animated: true, completion: nil)
+        }else if(argString == "retry"){
+            
+        }
+        argImage = nil
+        imageView = nil        
     }
 }
+
