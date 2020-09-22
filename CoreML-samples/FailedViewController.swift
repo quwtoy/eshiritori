@@ -1,5 +1,5 @@
 //
-//  SuccessViewController.swift
+//  FailedViewController.swift
 //  CoreML-samples
 //
 //  Created by 伊藤優樹 on 2020/01/22.
@@ -11,18 +11,22 @@ import UIKit
 
 class FailedViewController: UIViewController {
     
-    var argString = ""
     var argImage: UIImage! = nil
+    var argMessage = ""
+    var argGameOverMessage = ""
+    @IBOutlet var message:UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var ngButton: UIButton!
+    @IBOutlet var gameOverMessage:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // NGボタンタイトルを格納
-        ngButton.setTitle(argString, for: .normal)
+        ngButton.setTitle("close", for: .normal)
+        message.text = argMessage
+        gameOverMessage.text = argGameOverMessage
         
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        self.view.backgroundColor = UIColor.init(red: 255/255, green: 100/255, blue: 110/255, alpha: 100/100)
         
         imageView.image = argImage
         if(argImage != nil){
@@ -39,13 +43,14 @@ class FailedViewController: UIViewController {
 
     }
     @IBAction func ngButtonAction(_ sender: Any) {
-        if(argString == "close"){
+        if(gameOverMessage.text == ""){
             dismiss(animated: true, completion: nil)
-        }else if(argString == "retry"){
-            
+        }else{
+            self.performSegue(withIdentifier: "GameOverSegue", sender: nil)
         }
+        
         argImage = nil
-        imageView = nil        
+        imageView = nil
     }
 }
 

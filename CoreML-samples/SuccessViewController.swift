@@ -11,12 +11,15 @@ import UIKit
 
 class SuccessViewController: UIViewController {
     var argImage: UIImage! = nil
+    var argMessage = ""
+    @IBOutlet var message:UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        message.text = argMessage
         
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        self.view.backgroundColor = UIColor.init(red: 100/255, green: 110/255, blue: 255/255, alpha: 100/100)
         
         imageView.image = argImage
         if(argImage != nil){
@@ -30,8 +33,11 @@ class SuccessViewController: UIViewController {
             // 設定した画像をスクリーンに表示する
             self.view.addSubview(imageView)
         }
+        
     }
     @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
+    
+    
 }
