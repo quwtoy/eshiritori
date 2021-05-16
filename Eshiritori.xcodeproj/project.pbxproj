@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC55551C2434DBE1007B1DE5 /* yokoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55551B2434DBE1007B1DE5 /* yokoViewController.swift */; };
 		AC70D2A223705EA100E5A370 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AC70D2A123705EA100E5A370 /* Resnet50.mlmodel */; };
 		AC80BAF023892E76008138DF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80BAEF23892E76008138DF /* CustomCell.swift */; };
 		AC80BAF223892FAD008138DF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC80BAF123892FAD008138DF /* CustomCell.xib */; };
 		AC8B45302403D7F1006DF58E /* InitialCharSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B452F2403D7F1006DF58E /* InitialCharSelectViewController.swift */; };
 		AC8B45322403F8E7006DF58E /* TurnSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B45312403F8E7006DF58E /* TurnSelectViewController.swift */; };
-		AC8B45342404D310006DF58E /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B45332404D310006DF58E /* TestCollectionViewController.swift */; };
-		AC8B45362404D602006DF58E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B45352404D602006DF58E /* TestViewController.swift */; };
 		AC8B4538240A5D60006DF58E /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B4537240A5D60006DF58E /* CustomUICollectionViewCell.swift */; };
 		AC8E875823D7CF61001590C9 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E875723D7CF61001590C9 /* SuccessViewController.swift */; };
 		AC8E875A23D7D981001590C9 /* FailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E875923D7D981001590C9 /* FailedViewController.swift */; };
@@ -25,9 +22,9 @@
 		ACA099482401259700B5EE55 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA099472401259700B5EE55 /* InitialViewController.swift */; };
 		ACA0994A2401277D00B5EE55 /* piyopiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACA099492401277D00B5EE55 /* piyopiyo.gif */; };
 		ACA0994C24012A6200B5EE55 /* LevelSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0994B24012A6200B5EE55 /* LevelSelectViewController.swift */; };
+		ACB5A5CB26513A8900E528AD /* pasokon.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACB5A5CA26513A8900E528AD /* pasokon.gif */; };
 		ACC96C4F2519C91000915A5B /* myTurn.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC96C4E2519C91000915A5B /* myTurn.gif */; };
 		ACC96C522519C91700915A5B /* enemyTurn.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC96C512519C91700915A5B /* enemyTurn.gif */; };
-		ACC96C5A2519CC5900915A5B /* pasokon.gif in Resources */ = {isa = PBXBuildFile; fileRef = ACC96C592519CC5900915A5B /* pasokon.gif */; };
 		FA9331891EFD58DF00C47A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9331881EFD58DF00C47A0C /* AppDelegate.swift */; };
 		FA93318B1EFD58DF00C47A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93318A1EFD58DF00C47A0C /* ViewController.swift */; };
 		FA93318E1EFD58DF00C47A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93318C1EFD58DF00C47A0C /* Main.storyboard */; };
@@ -37,14 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC55551B2434DBE1007B1DE5 /* yokoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yokoViewController.swift; sourceTree = "<group>"; };
 		AC70D2A123705EA100E5A370 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		AC80BAEF23892E76008138DF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		AC80BAF123892FAD008138DF /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		AC8B452F2403D7F1006DF58E /* InitialCharSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCharSelectViewController.swift; sourceTree = "<group>"; };
 		AC8B45312403F8E7006DF58E /* TurnSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSelectViewController.swift; sourceTree = "<group>"; };
-		AC8B45332404D310006DF58E /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
-		AC8B45352404D602006DF58E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		AC8B4537240A5D60006DF58E /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
 		AC8E875723D7CF61001590C9 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		AC8E875923D7D981001590C9 /* FailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +49,9 @@
 		ACA099472401259700B5EE55 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		ACA099492401277D00B5EE55 /* piyopiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = piyopiyo.gif; sourceTree = "<group>"; };
 		ACA0994B24012A6200B5EE55 /* LevelSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectViewController.swift; sourceTree = "<group>"; };
+		ACB5A5CA26513A8900E528AD /* pasokon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pasokon.gif; sourceTree = "<group>"; };
 		ACC96C4E2519C91000915A5B /* myTurn.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = myTurn.gif; sourceTree = "<group>"; };
 		ACC96C512519C91700915A5B /* enemyTurn.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = enemyTurn.gif; sourceTree = "<group>"; };
-		ACC96C592519CC5900915A5B /* pasokon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pasokon.gif; path = "../../../Desktop/しりとり/pasokon.gif"; sourceTree = "<group>"; };
 		FA9331851EFD58DF00C47A0C /* eshiritori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eshiritori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9331881EFD58DF00C47A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA93318A1EFD58DF00C47A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,22 +102,19 @@
 				ACA0994B24012A6200B5EE55 /* LevelSelectViewController.swift */,
 				AC8B452F2403D7F1006DF58E /* InitialCharSelectViewController.swift */,
 				AC8B45312403F8E7006DF58E /* TurnSelectViewController.swift */,
-				AC8B45332404D310006DF58E /* TestCollectionViewController.swift */,
 				AC8B4537240A5D60006DF58E /* CustomUICollectionViewCell.swift */,
-				AC55551B2434DBE1007B1DE5 /* yokoViewController.swift */,
 				AC80BAEF23892E76008138DF /* CustomCell.swift */,
 				AC80BAF123892FAD008138DF /* CustomCell.xib */,
 				FA93319E1EFD594500C47A0C /* UIImage+Extension.swift */,
 				FA93318C1EFD58DF00C47A0C /* Main.storyboard */,
-				AC8B45352404D602006DF58E /* TestViewController.swift */,
 				AC8E875B23DDACFC001590C9 /* UIImage+Gif.swift */,
 				FA93318F1EFD58DF00C47A0C /* Assets.xcassets */,
 				FA9331911EFD58DF00C47A0C /* LaunchScreen.storyboard */,
 				ACC96C4E2519C91000915A5B /* myTurn.gif */,
 				ACC96C512519C91700915A5B /* enemyTurn.gif */,
 				ACA099492401277D00B5EE55 /* piyopiyo.gif */,
+				ACB5A5CA26513A8900E528AD /* pasokon.gif */,
 				ACA0994523FC1DE000B5EE55 /* yorokobi.gif */,
-				ACC96C592519CC5900915A5B /* pasokon.gif */,
 				AC8E876923FACD33001590C9 /* uruuru.gif */,
 				FA9331941EFD58DF00C47A0C /* Info.plist */,
 			);
@@ -162,7 +153,7 @@
 				TargetAttributes = {
 					FA9331841EFD58DF00C47A0C = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -193,8 +184,8 @@
 				FA9331931EFD58DF00C47A0C /* LaunchScreen.storyboard in Resources */,
 				FA9331901EFD58DF00C47A0C /* Assets.xcassets in Resources */,
 				ACC96C4F2519C91000915A5B /* myTurn.gif in Resources */,
+				ACB5A5CB26513A8900E528AD /* pasokon.gif in Resources */,
 				ACA0994A2401277D00B5EE55 /* piyopiyo.gif in Resources */,
-				ACC96C5A2519CC5900915A5B /* pasokon.gif in Resources */,
 				AC8E876A23FACD33001590C9 /* uruuru.gif in Resources */,
 				ACA0994623FC1DE000B5EE55 /* yorokobi.gif in Resources */,
 				AC80BAF223892FAD008138DF /* CustomCell.xib in Resources */,
@@ -216,12 +207,9 @@
 				AC8B45302403D7F1006DF58E /* InitialCharSelectViewController.swift in Sources */,
 				AC80BAF023892E76008138DF /* CustomCell.swift in Sources */,
 				AC8B4538240A5D60006DF58E /* CustomUICollectionViewCell.swift in Sources */,
-				AC8B45342404D310006DF58E /* TestCollectionViewController.swift in Sources */,
-				AC55551C2434DBE1007B1DE5 /* yokoViewController.swift in Sources */,
 				AC70D2A223705EA100E5A370 /* Resnet50.mlmodel in Sources */,
 				ACA0994223FAD6C700B5EE55 /* GameOverViewController.swift in Sources */,
 				ACA099482401259700B5EE55 /* InitialViewController.swift in Sources */,
-				AC8B45362404D602006DF58E /* TestViewController.swift in Sources */,
 				AC8E875A23D7D981001590C9 /* FailedViewController.swift in Sources */,
 				AC8E875823D7CF61001590C9 /* SuccessViewController.swift in Sources */,
 				AC8E875C23DDACFC001590C9 /* UIImage+Gif.swift in Sources */,
@@ -358,18 +346,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COREML_CODEGEN_LANGUAGE = Swift;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6VRJKBAL29;
 				INFOPLIST_FILE = Eshiritori/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.quwtoy.eshiritori2;
 				PRODUCT_NAME = eshiritori;
-				PROVISIONING_PROFILE_SPECIFIER = eshiritori_prov;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,18 +367,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COREML_CODEGEN_LANGUAGE = Swift;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6VRJKBAL29;
 				INFOPLIST_FILE = Eshiritori/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = me.quwtoy.eshiritori2;
 				PRODUCT_NAME = eshiritori;
-				PROVISIONING_PROFILE_SPECIFIER = eshiritori_prov;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
